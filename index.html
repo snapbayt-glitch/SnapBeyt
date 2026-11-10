@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>سناب بيت | SnapBayt</title>
+<link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;600;700&family=Tajawal:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#EEF3F9;--sf:#fff;--ink:#0B2545;--mute:#46607f;--line:#cbd8e8;--ac:#0096C7;--hi:#FFC857;--bp:#0B2545;--onbp:#EAF2FC;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#081A31;--sf:#0E2A4A;--ink:#E6F0FB;--mute:#9DB6D3;--line:#1d4068;--ac:#38C6F0;--bp:#06142a;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#081A31;--sf:#0E2A4A;--ink:#E6F0FB;--mute:#9DB6D3;--line:#1d4068;--ac:#38C6F0;--bp:#06142a;color-scheme:dark}
+html{height:100%;scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.8 Tajawal,system-ui,sans-serif}
+h1,h2,h3,button,.tab{font-family:"Readex Pro",Tajawal,system-ui,sans-serif}
+.wrap{max-width:1060px;margin:0 auto;padding:0 20px}
+.banner{background:var(--hi);color:#2a1d00;text-align:center;padding:8px 16px;font-weight:700;display:none}
+header.hero{background:var(--bp);color:var(--onbp);padding:24px 0 56px;background-image:linear-gradient(#ffffff0d 1px,transparent 1px),linear-gradient(90deg,#ffffff0d 1px,transparent 1px);background-size:32px 32px}
+nav{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.logo{font:700 24px "Readex Pro"}.logo i{color:var(--hi);font-style:normal}
+.nr{display:flex;gap:8px}
+.gh{background:transparent;border:1px solid #ffffff55;color:inherit;border-radius:99px;padding:6px 16px;cursor:pointer;font-size:14px}
+.hg{display:grid;grid-template-columns:1.1fr 1fr;gap:32px;align-items:center;margin-top:36px}
+h1{font-size:clamp(30px,5vw,52px);line-height:1.3;margin:0 0 16px}
+.lead{color:#b9cde6;max-width:34em;margin:0 0 24px}
+.btn{background:var(--hi);color:#2a1d00;border:0;border-radius:12px;padding:12px 24px;font-weight:700;font-size:16px;cursor:pointer}
+.btn.al{background:transparent;color:inherit;border:1px solid #ffffff66;margin-inline-start:8px}
+.plan{display:none}.h3d{position:relative;aspect-ratio:4/3;border-radius:18px;overflow:hidden;background:#0a2a45;border:1px solid #ffffff22}.h3d.tall{aspect-ratio:16/10}.h3d canvas{position:absolute;inset:0;width:100%;height:100%;touch-action:pan-y;cursor:grab}.cap{position:absolute;inset-inline:16px;bottom:44px;color:#fff;font:600 clamp(16px,2.4vw,24px)/1.5 "Readex Pro";text-shadow:0 2px 12px #000a;pointer-events:none}.hb{position:absolute;inset-inline:14px;top:12px;display:flex;gap:10px;align-items:center;color:#fff;font-size:13px;pointer-events:none}.hb .btn{padding:8px 16px;font-size:14px;pointer-events:auto}.pb{position:absolute;bottom:0;inset-inline-start:0;height:4px;width:0;background:var(--hi)}.stg{display:grid;grid-template-columns:1fr 1.3fr;gap:20px;align-items:start}.vw{position:sticky;top:70px}.chips{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}.chip{border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:99px;padding:6px 14px;cursor:pointer;font-size:14px}.chip[aria-pressed=true]{background:var(--ac);color:#fff;border-color:var(--ac)}.lk{color:var(--ac);font-weight:700;margin-inline-end:14px}.row{display:flex;gap:8px}.btn.al2{background:var(--ink);color:var(--bg)}#map{width:100%;max-height:230px}.rv{opacity:0;transform:translateY(46px);transition:opacity .7s,transform .7s}.rv.in{opacity:1;transform:none}#road{gap:44px}#road>div{position:relative;background:var(--sf);border:1px solid var(--line);border-radius:14px;padding:18px 20px;min-height:90px}#road>div::before{content:"";position:absolute;inset-inline-start:-31px;top:22px;width:14px;height:14px;border-radius:50%;background:var(--ac);box-shadow:0 0 0 6px #0096C733}@media(max-width:760px){.stg{grid-template-columns:1fr}.vw{position:static;order:-1}}@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}html[lang=ar] body{font-family:"Al-Jazeera-Arabic",Tajawal,system-ui,sans-serif}html[lang=ar] h1,html[lang=ar] h2,html[lang=ar] h3,html[lang=ar] button,html[lang=ar] .tab,html[lang=ar] .cap{font-family:"Al-Jazeera-Arabic","Readex Pro",Tajawal,sans-serif}html[lang=ar] .lead,html[lang=ar] .sub{font-weight:300}html[lang=ar] h1,html[lang=ar] h2{font-weight:700}
+.plan .w{fill:none;stroke:#8fd3f4;stroke-width:1.6;stroke-dasharray:420;stroke-dashoffset:420;animation:dr 2.4s ease forwards}
+.plan .w:nth-child(2){animation-delay:.3s}.plan .w:nth-child(3){animation-delay:.6s}.plan .w:nth-child(4){animation-delay:.9s}.plan .w:nth-child(5){animation-delay:1.2s}
+.plan text{fill:#b9cde6;font:11px "Readex Pro";opacity:0;animation:fi 1s 2s forwards}
+@keyframes dr{to{stroke-dashoffset:0}}@keyframes fi{to{opacity:1}}
+.tabs{display:flex;gap:6px;overflow-x:auto;padding:12px 0;position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);z-index:5;border-bottom:1px solid var(--line)}
+.tab{border:0;background:transparent;color:var(--mute);padding:10px 18px;border-radius:99px;cursor:pointer;font-size:15px;white-space:nowrap}
+.tab[aria-selected=true]{background:var(--ink);color:var(--bg)}
+.panel{display:none;padding:36px 0 56px}.panel.on{display:block}
+h2{font-size:30px;line-height:1.4;margin:0 0 10px}
+.sub{color:var(--mute);margin:0 0 24px;max-width:42em}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.card{background:var(--sf);border:1px solid var(--line);border-radius:16px;padding:20px}
+.card h3{margin:0 0 6px;font-size:18px}.card p{margin:0;color:var(--mute);font-size:15.5px}
+.man{font:600 clamp(20px,3vw,28px)/1.6 "Readex Pro";max-width:30em;margin:0 0 28px;border-inline-start:4px solid var(--ac);padding-inline-start:18px}
+.strip{display:flex;flex-wrap:wrap;gap:10px;margin:28px 0}
+.strip span{background:var(--ink);color:var(--bg);border-radius:99px;padding:8px 18px;font:600 15px "Readex Pro"}
+.n{font:700 14px "Readex Pro";color:var(--ac)}
+.tool .btn{background:var(--ac);color:#fff;margin-top:12px}
+label{display:block;font-weight:500;margin:12px 0 4px;font-size:15px}
+input,textarea,select{width:100%;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:inherit}
+textarea{min-height:84px}
+.out{white-space:pre-wrap;background:var(--bg);border:1px dashed var(--line);border-radius:12px;padding:14px;margin-top:12px;min-height:48px;font-size:15.5px}
+.big{grid-column:1/-1}
+.pv{background:var(--bp);border-radius:14px;margin-top:12px;padding:10px;color:var(--onbp)}
+.pv svg{width:100%;height:auto;max-height:340px}
+.cost{font:700 22px "Readex Pro";margin-top:8px}
+.tl{border-inline-start:3px solid var(--ac);padding-inline-start:20px;display:grid;gap:18px;margin:20px 0 36px}
+.tl h3{margin:0;font-size:18px}.tl p{margin:2px 0 0;color:var(--mute);font-size:15px}
+.note{font-size:13.5px;color:var(--mute);margin-top:8px}
+.admin{display:none;background:var(--sf);border:2px solid var(--hi);border-radius:16px;padding:22px;margin:24px 0}
+.msg{border-bottom:1px solid var(--line);padding:10px 0;font-size:15px}
+footer{background:var(--bp);color:var(--onbp);padding:28px 0;text-align:center;font-size:15px}footer a{color:var(--hi)}
+.ct{display:grid;grid-template-columns:1fr 1.4fr;gap:20px}
+:focus-visible{outline:3px solid var(--hi);outline-offset:2px}
+@media(max-width:760px){.hg,.ct{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.plan .w{animation:none;stroke-dashoffset:0}.plan text{animation:none;opacity:1}}
+</style>
+</head>
+<body>
+<div class="banner" id="banner"></div>
+<header class="hero"><div class="wrap">
+<nav><div class="logo" id="logo"></div><div class="nr"><button class="gh" id="lang">English</button><button class="gh" id="theme" data-k="mode"></button><button class="gh" id="adminBtn" hidden data-k="adm"></button></div></nav>
+<div class="hg"><div>
+<h1 data-k="h1"></h1><p class="lead" id="heroSub"></p>
+<button class="btn" data-go="ai" data-k="c1"></button><button class="btn al" data-go="about" data-k="c2"></button></div>
+<div class="h3d"><canvas id="cv1"></canvas><div class="hb"><button class="btn" id="film" data-k="film"></button><span data-k="hint"></span></div><div class="cap" id="cap1"></div><div class="pb" id="pb1"></div></div><svg class="plan" viewBox="0 0 320 230" aria-hidden="true"><rect class="w" x="10" y="10" width="300" height="210"/><rect class="w" x="10" y="10" width="130" height="110"/><rect class="w" x="140" y="10" width="170" height="70"/><rect class="w" x="10" y="120" width="100" height="100"/><rect class="w" x="140" y="80" width="170" height="140"/>
+<text x="75" y="70" text-anchor="middle">LIVING</text><text x="225" y="50" text-anchor="middle">MAJLIS</text><text x="60" y="175" text-anchor="middle">BED</text><text x="225" y="155" text-anchor="middle">GARDEN</text><text x="160" y="228" text-anchor="middle">12.0 m × 8.4 m</text></svg>
+</div></div></header>
+
+<main class="wrap">
+<div class="tabs" role="tablist" id="tabs"></div>
+
+<section class="panel" id="p-about">
+<h2 data-k="ah"></h2><p class="man" data-k="am"></p>
+<p class="sub" data-k="al"></p>
+<div class="grid" id="aboutCards"></div><div class="strip" id="strip"></div>
+<div class="grid" id="why"></div><h2 style="margin-top:36px" data-k="tyh"></h2><div class="grid" id="types"></div>
+</section>
+
+<section class="panel" id="p-how"><h2 data-k="hh"></h2><p class="sub" data-k="hs"></p><div class="grid" id="steps"></div></section>
+
+<section class="panel" id="p-studio"><h2 data-k="sdh"></h2><p class="sub" data-k="sds"></p>
+<div class="stg"><div class="card"><h3 data-k="s1h"></h3><div class="chips" id="sites"></div>
+<svg id="map" viewBox="0 0 320 250" role="img"></svg><p class="note" data-k="mapn"></p><p class="note" id="sdesc"></p>
+<p><a class="lk" id="ge" target="_blank" rel="noopener" data-k="ge"></a><a class="lk" id="gm" target="_blank" rel="noopener" data-k="gm"></a></p>
+<label for="coord" data-k="cl"></label><div class="row"><input id="coord" placeholder="28.0, 35.2"><button class="btn" id="cgo" data-k="cgo"></button></div>
+<h3 style="margin-top:22px" data-k="s2h"></h3><textarea id="st1" data-p="s1p"></textarea><button class="btn" id="sGo" data-k="sgo"></button>
+<div class="pv" id="spv" hidden></div><div class="cost" id="scost"></div><div class="out" id="sOut"></div>
+<h3 style="margin-top:22px" data-k="s3h"></h3><button class="btn" id="sCine" data-k="cine"></button> <button class="btn al2" id="sOrb" data-k="orb"></button>
+<label for="tod" data-k="todl"></label><input type="range" id="tod" min="5" max="95" value="70"></div>
+<div class="vw"><div class="h3d tall"><canvas id="cv2"></canvas><div class="cap" id="cap2"></div><div class="pb" id="pb2"></div></div><p class="note" data-k="n3d"></p></div></div></section>
+
+<section class="panel" id="p-ai"><h2 data-k="th"></h2><p class="sub" data-k="ts"></p>
+<div class="grid">
+<div class="card tool big"><h3 data-k="t1"></h3><p data-k="t1d"></p>
+<label for="d1" data-k="d1l"></label><textarea id="d1" data-p="d1p"></textarea>
+<button class="btn" id="dGo" data-k="dgo"></button>
+<div class="pv" id="pv" hidden></div><div class="cost" id="cost"></div><div class="out" id="dOut"></div><p class="note" data-k="dnote"></p></div>
+<div class="card tool"><h3 data-k="t2"></h3><p data-k="t2d"></p>
+<label for="q1" data-k="q1l"></label><textarea id="q1" data-p="q1p"></textarea>
+<button class="btn" id="qGo" data-k="qgo"></button><div class="out" id="qOut"></div></div>
+<div class="card tool"><h3 data-k="t3"></h3><p data-k="t3d"></p>
+<label for="e1" data-k="e1l"></label><select id="e1"><option>Doha</option><option>Riyadh</option><option>Dubai</option><option>Muscat</option><option>Cairo</option><option>Amman</option></select>
+<label for="e2" data-k="e2l"></label><select id="e2"></select>
+<button class="btn" id="eGo" data-k="ego"></button><div class="out" id="eOut"></div></div>
+</div></section>
+
+<section class="panel" id="p-svc"><h2 data-k="sh"></h2><p class="sub" data-k="ss"></p><div class="grid" id="svcs"></div></section>
+
+<section class="panel" id="p-biz"><h2 data-k="bh"></h2><p class="sub" data-k="bs"></p>
+<div class="grid" id="rev"></div><h2 style="margin-top:36px" data-k="rh"></h2><div class="tl" id="road"></div>
+<h2 data-k="trh"></h2><div class="grid" id="trust"></div></section>
+
+<section class="panel" id="p-join"><h2 data-k="jh"></h2><p class="sub" data-k="js"></p>
+<div class="ct"><div class="card"><h3 data-k="mailh"></h3><p><a href="mailto:snapbayt@gmail.com">snapbayt@gmail.com</a></p></div>
+<div class="card"><label for="n0" data-k="role"></label><select id="n0"></select>
+<label for="n1" data-k="nm"></label><input id="n1"><label for="n2" data-k="em"></label><input id="n2" type="email"><label for="n3" data-k="ms"></label><textarea id="n3"></textarea>
+<button class="btn" id="send" style="background:var(--ink);color:var(--bg)" data-k="snd"></button><div class="note" id="sent"></div></div></div>
+<div class="admin" id="admin"><h3 data-k="adm"></h3>
+<label for="a1" data-k="a1l"></label><input id="a1"><label for="a2" data-k="a2l"></label><textarea id="a2"></textarea>
+<button class="btn" id="asave" style="background:var(--ink);color:var(--bg)" data-k="sv"></button> <span class="note" id="astat"></span>
+<h3 style="margin-top:20px">Al-Jazeera-Arabic</h3><p class="note" data-k="fnote"></p><label>Light 300 <input type="file" id="f3" accept=".woff2,.woff,.ttf,.otf"></label><label>Regular 400 <input type="file" id="f4" accept=".woff2,.woff,.ttf,.otf"></label><label>Bold 700 <input type="file" id="f7" accept=".woff2,.woff,.ttf,.otf"></label><button class="btn" id="fsave" style="background:var(--ink);color:var(--bg)" data-k="fsave"></button> <span class="note" id="fst"></span>
+<h3 style="margin-top:20px" data-k="inb"></h3><div id="msgs"></div></div></section>
+</main>
+<footer><div class="wrap">SnapBayt · Web Summit Qatar 2027 · <a href="mailto:snapbayt@gmail.com">snapbayt@gmail.com</a></div></footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const D={ar:{
+mode:"الوضع",adm:"لوحة التحكم",c1:"جرّب مصمم البيوت بالذكاء الاصطناعي",c2:"من نحن",
+h1:"صمّم بيتك الجاهز. قارن المصانع. استلم المفتاح.",
+sub:"سناب بيت منصة وسيطة تجمع التصميم ثلاثي الأبعاد والذكاء الاصطناعي ومصانع البيوت الجاهزة في الشرق الأوسط، من الفكرة حتى التسليم.",
+tabs:["من نحن","كيف يعمل","استوديو المكان","الذكاء الاصطناعي","الخدمات","الأعمال","انضم وتواصل"],
+ah:"لا نبيع بيوتًا جاهزة. نبني الطريق بين الحلم والمفتاح.",
+am:"طموحنا أن يمرّ كل بيت جاهز في الخليج والشرق الأوسط عبر سناب بيت.",
+al:"ما زال بناء البيت في منطقتنا رحلة مبعثرة: عميل لا يعرف أين المصنع المناسب، ولا يستطيع المقارنة، ولا يرى النتيجة قبل أن يدفع. نجمع كل ذلك في منصة واحدة: تصميم تراه، وعروض تقارنها، وتنفيذ تتابعه.",
+ac:[["الرؤية","أن يصمّم كل إنسان بيته بنفسه، ويراه بدقة قبل أن يُبنى."],["الرسالة","ربط العميل بالمصانع بشفافية كاملة في التصميم والسعر والتنفيذ."],["القيم","شفافية الأسعار، جودة بمراجعة هندسية، وثقة بالدفع على مراحل."]],
+strip:["الخليج أولًا","ثم الشرق الأوسط","منصة وسيطة مفتوحة للمصانع","ذكاء اصطناعي في كل خطوة"],
+why:[["لماذا الآن؟","البيوت الجاهزة معيارية بطبيعتها، فيصبح التصميم الرقمي والتسعير الدقيق ممكنين."],["أثر الشبكة","كل مصنع جديد يجذب عملاء، وكل عميل يجذب مصانع، فتنمو الميزة مع الوقت."],["الإبهار يبيع","من رأى بيته في فيديو واقعي يقرر أسرع وبثقة أكبر."]],
+hh:"من الفكرة إلى التسليم في ست خطوات",hs:"كل شيء داخل المنصة، من أول رسمة حتى استلام البيت.",
+steps:[["البداية","حدّد الأرض وعدد الأفراد والميزانية والذوق."],["التصميم","ابنِ بيتك ثلاثي الأبعاد: المساحة والغرف والواجهة والمواد."],["التفاصيل الهندسية","مساقط وواجهات وقوائم مواد تلقائية."],["العرض النهائي","فيديو سينمائي واقعي لبيتك في موقعه، تشاركه مع العائلة."],["عروض الأسعار","تصميمك يصل لمصانع مناسبة فتصلك عروض قابلة للمقارنة."],["التعاقد والتنفيذ","اختر المصنع، وقّع، وادفع على مراحل، وتابع حتى التسليم."]],
+th:"جرّب الذكاء الاصطناعي الآن",ts:"ثلاث أدوات حيّة للعرض. النتائج توضيحية وليست عرض سعر ولا مخططات معتمدة.",
+t1:"مصمم البيوت المحادث",t1d:"صف حلمك بالكلام، فيرسم المخطط ويقدّر نطاق السعر.",d1l:"صف بيتك",d1p:"بيت دورين فيه مجلس كبير و4 غرف نوم وحديقة",dgo:"صمّم بيتي",dnote:"التقدير توضيحي ببيانات افتراضية. السعر النهائي يؤكده المصنع بعد المراجعة الهندسية.",
+t2:"محلل عروض الأسعار",t2d:"الصق عروض المصانع ليقارنها ويلخصها لك.",q1l:"عروض الأسعار",q1p:"اتركه فارغًا لتجربة مثال جاهز",qgo:"قارن العروض",
+t3:"مستشار الموقع والطاقة",t3d:"نصائح لتوجيه البيت وتقليل استهلاك الكهرباء.",e1l:"المدينة",e2l:"اتجاه الواجهة الأطول",ego:"انصحني",
+dirs:["شمال","جنوب","شرق","غرب"],sys:{container:"حاويات",steel:"هيكل فولاذي",sip:"ألواح SIP",panel:"ألواح خرسانية"},
+need:"اكتب وصفًا أولًا.",wait:"جارٍ التفكير…",na:"أداة الذكاء الاصطناعي غير متاحة هنا.",err:"تعذّر الحصول على رد الآن، حاول لاحقًا.",est:"تقدير توضيحي: ",area:"المساحة",
+ex:"عرض أ: 85,000$، 14 أسبوعًا، شحن غير مشمول، ضمان سنتين.\nعرض ب: 78,000$، 20 أسبوعًا، شحن مشمول، ضمان سنة.\nعرض ج: 92,000$، 12 أسبوعًا، شحن وتركيب مشمولان، ضمان 5 سنوات.",
+sh:"منظومة كاملة حول البيت",ss:"أكثر من مجرد مصنع: كل ما يحتاجه البيت من الأرض إلى إعادة البيع.",
+svcs:[["الشحن واللوجستيات","تكلفة الشحن من أبعاد الوحدات، الرافعات، الجمارك، التتبع."],["تجهيز الموقع","أساسات، كهرباء ومياه وصرف، تسوية، رخص."],["التركيب","فرق معتمدة بتقييمات وضمان."],["التمويل والتأمين","تقسيط وتمويل بما فيه الصيغ الإسلامية، وتأمين."],["الطاقة والمياه","ألواح شمسية، بطاريات، عزل حراري، معالجة مياه."],["التكييف والمطابخ","أنظمة مناسبة للمناخ وأجهزة موفرة."],["الأثاث والديكور","حزم تأثيث تُعرض مع التصميم."],["البيت الذكي","كاميرات وأقفال وتحكم بالإضاءة والتكييف."],["الخارج والترفيه","حدائق، مسابح، برجولات، سياج."],["الصيانة وإعادة البيع","عقود صيانة وسوق لبيع وتأجير البيوت الجاهزة."]],
+bh:"كيف تربح المنصة",bs:"عمولات وخدمات حول صفقة واحدة تنمو مع كل بيت.",
+rev:[["عمولة الصفقات","على كل صفقة بين العميل والمصنع."],["اشتراكات المصانع","لوحة عملاء وظهور مميز وتحليلات."],["الخدمات المرتبطة","شحن وتمويل وتأمين وتركيب وتأثيث."],["العرض السينمائي","باقات ريندر وجولة افتراضية متقدمة."]],
+rh:"خارطة الطريق",road:[["3–6 أشهر","مصمم ثلاثي الأبعاد بسيط، 10–20 مصنعًا، طلب عروض أسعار، سوق واحد."],["6–12 شهرًا","تفاصيل هندسية تلقائية، فيديو سينمائي، تسعير لحظي، دفع بالضمان."],["12–18 شهرًا","شحن وتركيب وتمويل، مساعد محادث، فاحص أكواد."],["بعد ذلك","توسع لدول أخرى، واقع معزز، متابعة ذكية للتنفيذ، سوق إعادة البيع."]],
+trh:"كيف نبني الثقة",trust:[["نطاق سعري فوري","ثم عرض نهائي مؤكد من المصنع بعد مراجعة هندسية."],["مهندس معتمد","يراجع الرسومات قبل أي تنفيذ."],["دفع بالضمان","دفع على مراحل عبر حساب ضمان يطمئن الطرفين."],["سوق واحد أولًا","نبدأ بسوق أو اثنين لضبط الأكواد والتراخيص."]],
+jh:"انضم إلى سناب بيت",js:"عميل، مصنع، مزوّد خدمة أو مستثمر: يسعدنا سماعك.",mailh:"البريد الإلكتروني",
+roles:["عميل يريد بناء بيت","مصنع بيوت جاهزة","مزوّد خدمة","مستثمر / شريك"],role:"أنا",nm:"الاسم",em:"البريد",ms:"رسالتك",snd:"أرسل",ok:"وصلت رسالتك، شكرًا لك.",need2:"اكتب رسالتك أولًا.",
+a1l:"شريط إعلان أعلى الموقع (فارغ = مخفي)",a2l:"النص التعريفي في الواجهة",sv:"حفظ",saved:"تم الحفظ",fail:"تعذّر الحفظ",inb:"الرسائل الواردة",none:"لا توجد رسائل بعد.",del:"حذف",
+film:"▶ شاهد الفيلم (20 ثانية)",hint:"اسحب لتدوير البيت",sdh:"استوديو المكان: صمّم بيتك على شاطئك",sds:"اختر الموقع، صِف بيتك، ثم شاهده في مكانه بجولة سينمائية ثلاثية الأبعاد.",s1h:"1. اختر المكان",s2h:"2. صمّم بيتك هناك",s3h:"3. شاهده سينمائيًا",ge:"افتح في Google Earth",gm:"خرائط جوجل (قمر صناعي)",cl:"أو أدخل إحداثيات",cgo:"اذهب",mapn:"خريطة تخطيطية للاختيار. الصور الحقيقية للمكان في Google Earth.",s1p:"فيلا شاطئية بوحدات جاهزة، 3 غرف نوم، ألواح شمسية ومسبح",sgo:"صمّم وتخيّل",cine:"▶ جولة سينمائية",orb:"تدوير حر",todl:"وقت اليوم (فجر ← غروب)",n3d:"عرض ثلاثي الأبعاد لحظي توضيحي وليس صورة فوتوغرافية. اسحب للتدوير.",feas:"قابلية التنفيذ مبدئية وتتطلب مراجعة الأرض والتراخيص.",fc:["يومًا ما، سيكون لعائلتك بيتٌ على البحر.","صمّمه بنفسك، بالكلام أو بالرسم.","قارن المصانع واختر الأنسب.","سناب بيت: بيتك الجاهز يصل إليك."],cc:["المكان الذي اخترته","الواجهة الزجاجية والتفاصيل","الشرفة والوحدات الجاهزة","السقف والطاقة الشمسية","البيت من الأعلى"],tyh:"طرازات البيوت الجاهزة",ty:[["حاويات","اقتصادي وسريع التركيب."],["هيكل فولاذي","مرونة في الفتحات والمساحات."],["ألواح SIP","عزل ممتاز للمناخ الحار."],["ألواح خرسانية","متانة وشكل معماري صلب."]],fnote:"ارفع ملفات خط Al-Jazeera-Arabic (خفيف 300، عادي 400، عريض 700) لتفعيله. تأكد من ترخيص الخط.",fsave:"رفع الخطوط",
+lng:"ar"},
+en:{
+mode:"Theme",adm:"Control panel",c1:"Try the AI home designer",c2:"About us",
+h1:"Design your prefab home. Compare factories. Get your keys.",
+sub:"SnapBayt is a marketplace platform that joins 3D design, AI and the Middle East’s prefab factories, from first idea to handover.",
+tabs:["About us","How it works","Place studio","AI tools","Services","Business","Join & contact"],
+ah:"We don’t sell prefab homes. We build the road from dream to doorstep.",
+am:"Our ambition: every prefab home in the Gulf and the Middle East passes through SnapBayt.",
+al:"Building a home here is still a scattered journey: buyers can’t find the right factory, can’t compare, and can’t see the result before paying. We bring it into one platform: a design you can see, quotes you can compare, and a build you can follow.",
+ac:[["Vision","Anyone can design their own home and see it precisely before it is built."],["Mission","Connect buyers to factories with full transparency in design, price and delivery."],["Values","Price transparency, engineer-reviewed quality, and trust through staged payments."]],
+strip:["Gulf first","Then the Middle East","An open platform for factories","AI at every step"],
+why:[["Why now?","Prefab is modular by nature, which makes digital design and precise pricing possible."],["Network effect","Each factory attracts buyers and each buyer attracts factories, so the edge compounds."],["Seeing sells","People who watch their home in a realistic film decide faster and with more confidence."]],
+hh:"From idea to handover in six steps",hs:"All inside the platform, from the first sketch to the keys.",
+steps:[["Start","Set your plot, household size, budget and taste."],["Design","Build your home in 3D: area, rooms, facade, materials."],["Engineering details","Automatic plans, elevations and material lists."],["Final showcase","A realistic cinematic film of your home on its site, ready to share."],["Quotes","Your design reaches suitable factories and comparable quotes come back."],["Contract & build","Pick a factory, sign, pay in stages and follow through to handover."]],
+th:"Try the AI now",ts:"Three live demo tools. Results are illustrative, not a quote or approved drawings.",
+t1:"Conversational home designer",t1d:"Describe your dream. It draws the plan and estimates a price range.",d1l:"Describe your home",d1p:"A two-storey house with a large majlis, 4 bedrooms and a garden",dgo:"Design my home",dnote:"Estimate uses placeholder data. The final price is confirmed by the factory after engineering review.",
+t2:"Quote analyzer",t2d:"Paste factory quotes and get a side-by-side summary.",q1l:"Quotes",q1p:"Leave empty to try a ready example",qgo:"Compare quotes",
+t3:"Site & energy advisor",t3d:"Tips to orient the house and cut electricity use.",e1l:"City",e2l:"Longest facade faces",ego:"Advise me",
+dirs:["North","South","East","West"],sys:{container:"Container",steel:"Steel frame",sip:"SIP panels",panel:"Concrete panels"},
+need:"Write a description first.",wait:"Thinking…",na:"The AI tool isn’t available here.",err:"Couldn’t get a reply right now. Try again later.",est:"Illustrative estimate: ",area:"Area",
+ex:"Quote A: $85,000, 14 weeks, shipping not included, 2-year warranty.\nQuote B: $78,000, 20 weeks, shipping included, 1-year warranty.\nQuote C: $92,000, 12 weeks, shipping and installation included, 5-year warranty.",
+sh:"A full ecosystem around the home",ss:"More than a factory: everything a home needs, from the plot to resale.",
+svcs:[["Shipping & logistics","Cost from unit dimensions, cranes, customs, tracking."],["Site preparation","Foundations, power, water, drainage, grading, permits."],["Installation","Certified, rated crews with warranty."],["Finance & insurance","Instalments incl. Islamic finance, and insurance."],["Energy & water","Solar, batteries, insulation, water treatment."],["Cooling & kitchens","Climate-fit systems and efficient appliances."],["Furniture & decor","Furnishing packs shown with the design."],["Smart home","Cameras, locks, lighting and AC control."],["Outdoor & leisure","Gardens, pools, pergolas, fencing."],["Maintenance & resale","Service plans and a market to sell or rent prefab homes."]],
+bh:"How the platform earns",bs:"Commissions and services around one deal that grow with every home.",
+rev:[["Deal commission","On each deal between buyer and factory."],["Factory subscriptions","Lead dashboard, featured placement, analytics."],["Related services","Shipping, finance, insurance, installation, furnishing."],["Cinematic showcase","Advanced render and virtual-tour packages."]],
+rh:"Roadmap",road:[["3–6 months","Simple 3D designer, 10–20 factories, quote requests, one market."],["6–12 months","Automatic engineering details, cinematic film, live pricing, escrow payments."],["12–18 months","Shipping, installation, finance, conversational AI, code checker."],["Beyond","More countries, AR, smart build tracking, resale market."]],
+trh:"How we build trust",trust:[["Instant price range","Then a final quote confirmed by the factory after engineering review."],["Licensed engineer","Reviews drawings before any build."],["Escrow payments","Staged payments through an escrow account protect both sides."],["One market first","Start with one or two markets to get codes and permits right."]],
+jh:"Join SnapBayt",js:"Buyer, factory, service provider or investor: we’d love to hear from you.",mailh:"Email",
+roles:["Buyer planning a home","Prefab factory","Service provider","Investor / partner"],role:"I am a",nm:"Name",em:"Email",ms:"Your message",snd:"Send",ok:"Message received, thank you.",need2:"Write your message first.",
+a1l:"Top announcement bar (empty = hidden)",a2l:"Hero intro text",sv:"Save",saved:"Saved",fail:"Couldn’t save",inb:"Inbox",none:"No messages yet.",del:"Delete",
+film:"▶ Watch the film (20s)",hint:"Drag to rotate",sdh:"Place studio: design your home on your own shore",sds:"Pick a site, describe your home, then see it in place with a 3D cinematic tour.",s1h:"1. Choose the place",s2h:"2. Design your home there",s3h:"3. See it cinematically",ge:"Open in Google Earth",gm:"Google Maps (satellite)",cl:"Or enter coordinates",cgo:"Go",mapn:"Schematic map for picking. Real imagery of the place is in Google Earth.",s1p:"A beach villa from prefab modules, 3 bedrooms, solar panels and a pool",sgo:"Design & imagine",cine:"▶ Cinematic tour",orb:"Free orbit",todl:"Time of day (dawn ← sunset)",n3d:"Real-time illustrative 3D, not a photograph. Drag to rotate.",feas:"Feasibility is preliminary and needs land and permit review.",fc:["One day, your family will have a home by the sea.","Design it yourself, by voice or by sketch.","Compare factories and pick the best fit.","SnapBayt: your prefab home, delivered."],cc:["The place you chose","Glazed facade and details","Deck and prefab modules","Roof and solar power","The home from above"],tyh:"Prefab home types",ty:[["Container","Economical and fast to install."],["Steel frame","Flexible openings and spans."],["SIP panels","Excellent insulation for hot climates."],["Concrete panels","Durable with a solid architectural look."]],fnote:"Upload Al-Jazeera-Arabic font files (Light 300, Regular 400, Bold 700) to activate it. Make sure you hold the font licence.",fsave:"Upload fonts",
+lng:"en"}};
+let L=localStorage.getItem&&(()=>{try{return localStorage.getItem('sb-l')}catch(e){return null}})()||'ar',cfg=null,cur='about';
+const t=k=>D[L][k];
+function cards(id,a){const b=$('#'+id);b.textContent='';a.forEach((x,i)=>{const c=document.createElement('div');c.className=id==='road'?'':'card';const h=document.createElement('h3');h.textContent=x[0];const p=document.createElement('p');p.textContent=x[1];c.append(h,p);b.append(c)})}
+function render(){const d=document.documentElement;d.lang=L;d.dir=L==='ar'?'rtl':'ltr';$('#lang').textContent=L==='ar'?'English':'العربية';
+$('#logo').innerHTML=L==='ar'?'سناب <i>بيت</i>':'Snap<i>Bayt</i>';
+$$('[data-k]').forEach(e=>e.textContent=t(e.dataset.k));$$('[data-p]').forEach(e=>e.placeholder=t(e.dataset.p));
+$('#heroSub').textContent=(cfg&&cfg.sub&&cfg.lng===L)?cfg.sub:t('sub');
+const tb=$('#tabs');tb.textContent='';['about','how','studio','ai','svc','biz','join'].forEach((k,i)=>{const b=document.createElement('button');b.className='tab';b.setAttribute('role','tab');b.dataset.t=k;b.textContent=t('tabs')[i];b.onclick=()=>go(k);tb.append(b)});
+cards('aboutCards',t('ac'));cards('why',t('why'));cards('steps',t('steps').map((s,i)=>[(i+1)+'. '+s[0],s[1]]));cards('svcs',t('svcs'));cards('rev',t('rev'));cards('road',t('road'));cards('trust',t('trust'));
+$('#strip').textContent='';t('strip').forEach(s=>{const e=document.createElement('span');e.textContent=s;$('#strip').append(e)});
+$('#e2').innerHTML='';t('dirs').forEach(s=>{const o=document.createElement('option');o.textContent=s;$('#e2').append(o)});
+$('#n0').innerHTML='';t('roles').forEach(s=>{const o=document.createElement('option');o.textContent=s;$('#n0').append(o)});
+renderInbox();go(cur);renderStudio();revealInit()}
+function go(k){cur=k;$$('.tab').forEach(b=>b.setAttribute('aria-selected',b.dataset.t===k));$$('.panel').forEach(p=>p.classList.toggle('on',p.id==='p-'+k))}
+$$('[data-go]').forEach(b=>b.onclick=()=>{go(b.dataset.go);$('#tabs').scrollIntoView({behavior:'smooth'})});
+$('#lang').onclick=()=>{L=L==='ar'?'en':'ar';try{localStorage.setItem('sb-l',L)}catch(e){}render()};
+$('#theme').onclick=()=>{const d=document.documentElement;d.dataset.theme=getComputedStyle(d).colorScheme==='dark'?'light':'dark'};
+const SAFE=()=>(L==='ar'?'اكتب بالعربية. ':'Write in English. ')+'You are SnapBayt’s demo assistant for prefab homes in the Middle East. Be concise and practical. Figures are illustrative, never a binding quote or engineering approval.';
+async function smp(){try{return await claude.use('sample')}catch(e){return null}}
+async function ask(prompt,out){const s=await smp();if(!s){out.textContent=t('na');return}out.textContent=t('wait');try{await s(SAFE()+'\n\n'+prompt,{modelTier:'quick',cache:false,onText:({text})=>out.textContent=text})}catch(e){out.textContent=e&&e.code==='not_granted'?t('na'):t('err')}}
+const RATE={container:[450,700],steel:[600,900],sip:[500,800],panel:[650,1000]};
+function drawPlan(sp){const R=(sp.rooms||[]).filter(r=>r.w>0&&r.h>0).map(r=>({n:String(r.n||'').slice(0,18),w:+r.w,h:+r.h}));if(!R.length)return null;
+const tot=R.reduce((a,r)=>a+r.w*r.h,0),rw=Math.sqrt(tot)*1.5;let x=0,y=0,rh=0,mx=0,o='';
+R.sort((a,b)=>b.w*b.h-a.w*a.h).forEach((r,i)=>{if(x+r.w>rw&&x>0){x=0;y+=rh;rh=0}
+o+=`<rect x="${x}" y="${y}" width="${r.w}" height="${r.h}" fill="${i%2?'#38C6F022':'#FFC85722'}" stroke="#8fd3f4" stroke-width=".09"/><text x="${x+r.w/2}" y="${y+r.h/2}" text-anchor="middle" fill="#EAF2FC" font-size=".62">${r.n.replace(/[<&]/g,'')}</text><text x="${x+r.w/2}" y="${y+r.h/2+.8}" text-anchor="middle" fill="#9DB6D3" font-size=".5">${r.w}×${r.h}</text>`;
+x+=r.w;mx=Math.max(mx,x);rh=Math.max(rh,r.h)});
+return{svg:`<svg viewBox="-.5 -.5 ${mx+1} ${y+rh+1}" role="img">${o}</svg>`,area:tot}}
+$('#dGo').onclick=async()=>{const v=$('#d1').value.trim(),out=$('#dOut');if(!v){out.textContent=t('need');return}
+const s=await smp();if(!s){out.textContent=t('na');return}out.textContent=t('wait');$('#pv').hidden=true;$('#cost').textContent='';
+try{const sp=await s.json(SAFE()+'\nReturn ONLY JSON: {"title":string,"system":"container"|"steel"|"sip"|"panel","floors":number,"rooms":[{"n":room name in the user’s language,"w":meters,"h":meters}],"note":one short sentence}. 5 to 12 rooms, realistic sizes for one floor of the plan. Request: '+v,{modelTier:'quick',cache:false});
+const p=drawPlan(sp);if(!p){out.textContent=t('err');return}
+$('#pv').innerHTML=p.svg;$('#pv').hidden=false;const r=RATE[sp.system]||RATE.steel,fl=Math.max(1,Math.min(3,+sp.floors||1)),a=Math.round(p.area*fl);
+$('#cost').textContent=t('est')+'$'+(a*r[0]).toLocaleString('en')+' – $'+(a*r[1]).toLocaleString('en');
+out.textContent=(sp.title||'')+'\n'+t('area')+': '+a+' m² · '+(t('sys')[sp.system]||sp.system)+'\n'+(sp.note||'')}catch(e){out.textContent=e&&e.code==='not_granted'?t('na'):t('err')}};
+$('#qGo').onclick=()=>ask('Compare these factory quotes for a prefab home. Give a short table-like list by price, lead time, inclusions and warranty, then a one-line recommendation with the trade-off:\n'+($('#q1').value.trim()||t('ex')),$('#qOut'));
+$('#eGo').onclick=()=>ask('City: '+$('#e1').value+'. Longest facade faces: '+$('#e2').value+'. Give 5 short tips on house orientation, openings, shading, insulation and solar for a prefab home.',$('#eOut'));
+let db=null,isOwner=false,inbox=[];
+function renderInbox(){const b=$('#msgs');if(!b)return;b.textContent='';if(!inbox.length){b.textContent=t('none');return}inbox.forEach(d=>{const m=d.data()||{},r=document.createElement('div');r.className='msg';r.textContent='['+(m.role||'')+'] '+(m.name||'')+' ('+(m.email||'')+'): '+(m.text||'');const x=document.createElement('button');x.className='gh';x.style.cssText='color:inherit;border-color:var(--line);margin-inline-start:8px';x.textContent=t('del');x.onclick=()=>db.doc('messages/'+d.id).delete();r.append(x);b.append(r)})}
+function paintCfg(){applyFonts(cfg&&cfg.fonts);const b=$('#banner');b.textContent=(cfg&&cfg.banner)||'';b.style.display=cfg&&cfg.banner?'block':'none';$('#heroSub').textContent=(cfg&&cfg.sub&&cfg.lng===L)?cfg.sub:t('sub')}
+(async()=>{try{const u=await claude.use('user');isOwner=!!(u&&u.isOwner());db=await claude.use('db')}catch(e){}
+if(db){try{db.doc('site/config').onSnapshot(s=>{cfg=s.exists?s.data():null;paintCfg()})}catch(e){}}
+if(isOwner){$('#adminBtn').hidden=false;$('#adminBtn').onclick=()=>{go('join');$('#admin').style.display='block';$('#admin').scrollIntoView({behavior:'smooth'})};
+if(db){try{db.collection('messages').onSnapshot(q=>{inbox=q.docs||[];renderInbox()})}catch(e){}}}})();
+$('#asave').onclick=async()=>{if(!db)return;try{await db.doc('site/config').set(Object.assign({},cfg||{},{banner:$('#a1').value,sub:$('#a2').value,lng:L}));$('#astat').textContent=t('saved')}catch(e){$('#astat').textContent=t('fail')}};
+$('#send').onclick=async()=>{const m={role:$('#n0').value,name:$('#n1').value,email:$('#n2').value,text:$('#n3').value};if(!m.text.trim()){$('#sent').textContent=t('need2');return}
+if(db){try{await db.doc('messages/m'+Date.now()).set(Object.assign(m,{at:Date.now()}));$('#sent').textContent=t('ok');$('#n3').value='';return}catch(e){}}
+location.href='mailto:snapbayt@gmail.com?subject='+encodeURIComponent('SnapBayt: '+m.role)+'&body='+encodeURIComponent(m.text+'\n\n'+m.name+' '+m.email)};
+const RM=matchMedia('(prefers-reduced-motion:reduce)').matches;
+const SITES=[
+{k:'neom',n:['نيوم، السعودية','NEOM, Saudi Arabia'],c:[28.0,35.2],sea:0x16b3c9,sand:0xd9c4a0,sky:0x9ed8f2,mt:1,p:[62,40],d:['ساحل البحر الأحمر: جبال خلفية وبحر فيروزي. أي بناء يخضع لتصاريح هيئة نيوم.','Red Sea coast: mountain backdrop and turquoise water. Any build needs NEOM authority permits.']},
+{k:'qatar',n:['شواطئ شمال قطر','Northern Qatar beaches'],c:[26.1,51.2],sea:0x2ec4c4,sand:0xeadcc0,sky:0xa8dcf0,mt:0,p:[222,98],d:['رمال فاتحة ومياه ضحلة فيروزية، ومناخ حار يحتاج عزلًا وتظليلًا.','Pale sand and shallow turquoise water; a hot climate that needs insulation and shading.']},
+{k:'salalah',n:['صلالة، سلطنة عُمان','Salalah, Oman'],c:[16.95,54.0],sea:0x1d8fb0,sand:0xcdb98f,sky:0xb5dcc8,mt:2,p:[238,212],d:['تلال خضراء ونخيل وبحر العرب، ورطوبة موسمية في الخريف تتطلب عزلًا.','Green hills, palms and the Arabian Sea; seasonal monsoon humidity calls for good insulation.']}];
+const M=(c,o)=>new THREE.MeshStandardMaterial(Object.assign({color:c,roughness:.8},o));
+function palm(g,x,z,s){const p=new THREE.Group(),tr=new THREE.Mesh(new THREE.CylinderGeometry(.12,.2,4.4,6),M(0x8a6a48));tr.position.y=2.2;p.add(tr);for(let i=0;i<7;i++){const l=new THREE.Mesh(new THREE.BoxGeometry(2.6,.05,.55),M(0x2f7d3a));l.geometry.translate(1.3,0,0);l.position.y=4.4;l.rotation.y=i*.9;l.rotation.z=-.35;p.add(l)}p.position.set(x,0,z);p.scale.setScalar(s||1);g.add(p)}
+function fig(h,c,x){const g=new THREE.Group(),b=new THREE.Mesh(new THREE.CylinderGeometry(h*.12,h*.14,h*.45,8),M(c)),hd=new THREE.Mesh(new THREE.SphereGeometry(h*.11,12,10),M(0xe0b08c));b.position.y=h*.62;hd.position.y=h*.92;g.add(b,hd);g.legs=[];for(let s=-1;s<=1;s+=2){const l=new THREE.Mesh(new THREE.BoxGeometry(h*.09,h*.4,h*.09),M(0x35405a));l.geometry.translate(0,-h*.2,0);l.position.set(s*h*.07,h*.4,0);g.add(l);g.legs.push(l)}g.position.x=x;return g}
+const FILM=[{t:0,p:[0,1.5,-14],l:[0,2.2,22]},{t:7,p:[2.5,1.4,-2],l:[0,2.2,20]},{t:12,p:[7,2,6],l:[0,2.4,18]},{t:16,p:[16,7,-4],l:[0,3,20]},{t:20,p:[0,5.5,-12],l:[0,3,20]}];
+const CINE=[{t:0,p:[60,18,-50],l:[0,3,20]},{t:5,p:[20,6,-14],l:[0,3,20]},{t:11,p:[-8,1.8,4],l:[4,2,20]},{t:16,p:[-14,4,18],l:[0,3,22]},{t:21,p:[0,24,10],l:[0,0,20]},{t:24,p:[0,4,-18],l:[0,3,20]}];
+const WS=[];
+function World(cv,capEl,pbEl){
+const R=new THREE.WebGLRenderer({canvas:cv,antialias:true}),S=new THREE.Scene(),C=new THREE.PerspectiveCamera(45,1,.1,700);R.setPixelRatio(Math.min(devicePixelRatio||1,2));
+const hemi=new THREE.HemisphereLight(0xdff0ff,0x9a8a68,.8),sun=new THREE.DirectionalLight(0xfff0d0,1.2),sunM=new THREE.Mesh(new THREE.SphereGeometry(22,16,12),new THREE.MeshBasicMaterial({color:0xfff2c0,fog:false}));S.add(hemi,sun,sunM);
+const sea=new THREE.Mesh(new THREE.PlaneGeometry(400,240,70,40),new THREE.MeshPhongMaterial({color:0x16b3c9,shininess:90,flatShading:true})),sg=sea.geometry.attributes.position;sea.rotation.x=-Math.PI/2;sea.position.set(0,-.2,-120);
+const sand=new THREE.Mesh(new THREE.PlaneGeometry(400,200),new THREE.MeshLambertMaterial({color:0xd9c4a0}));sand.rotation.x=-Math.PI/2;sand.position.set(0,0,100);
+const env=new THREE.Group(),house=new THREE.Group(),fam=new THREE.Group();house.position.set(0,0,20);fam.visible=false;S.add(sea,sand,env,house,fam);
+[-1.4,-.5,.5,1.4].forEach((x,i)=>fam.add(fig([1.75,1.62,1.15,1][i],[0xd1495b,0x2f6fb0,0xf2b134,0x3fa34d][i],x)));
+let K=SITES[1],mode='orbit',tt=0,dur=20,vis=true,off=0,offP=0,base=.72,rad=36,caps=[],ct=[];
+const api={};
+function setTod(v){const c=new THREE.Color(0xffc09a),sk=new THREE.Color(K.sky),ss=new THREE.Color(0xff8a5c);if(v<.5)c.lerp(sk,v*2);else c.copy(sk).lerp(ss,(v-.5)*2);S.background=c;S.fog=new THREE.Fog(c,90,420);const a=Math.PI*(.1+.8*v),el=Math.sin(a);sun.position.set(Math.cos(a)*200,el*130+6,-70);sun.intensity=.45+.9*el;hemi.intensity=.35+.55*el;sunM.position.copy(sun.position).multiplyScalar(2.2);sunM.material.color.setHex(el<.35?0xffa060:0xfff2c0)}
+function pose(k,T){T=Math.min(T,k[k.length-1].t);let a=k[0],b=k[1];for(let i=0;i<k.length-1;i++)if(T>=k[i].t&&T<=k[i+1].t){a=k[i];b=k[i+1];break}const u=(T-a.t)/(b.t-a.t),e=u*u*(3-2*u),L=(x,y)=>x.map((v,i)=>v+(y[i]-v)*e),p=L(a.p,b.p),l=L(a.l,b.l);C.position.set(p[0],p[1],p[2]);C.lookAt(l[0],l[1],l[2])}
+api.site=k=>{K=SITES.find(x=>x.k===k)||SITES[1];sea.material.color.setHex(K.sea);sand.material.color.setHex(K.sand);while(env.children.length)env.remove(env.children[0]);
+if(K.mt===1)for(let i=0;i<14;i++){const m=new THREE.Mesh(new THREE.ConeGeometry(14+Math.random()*14,28+Math.random()*40,5),M(i%2?0x7a5a4c:0x8f6a58,{flatShading:true}));m.position.set(-170+i*26,10,150+Math.random()*30);env.add(m)}
+if(K.mt===2)for(let i=0;i<10;i++){const m=new THREE.Mesh(new THREE.SphereGeometry(30+Math.random()*20,16,10),M(0x4f8c3c));m.scale.y=.5;m.position.set(-150+i*34,0,130+Math.random()*30);env.add(m)}
+const np=K.mt===2?10:5;for(let i=0;i<np;i++)palm(env,-40+i*(80/np)+(i%2)*3,6+(i%3)*3,.9+(i%2)*.3);setTod(base)};
+api.spec=sp=>{while(house.children.length)house.remove(house.children[0]);const n=Math.max(1,Math.min(6,sp.n|0||3)),fl=Math.max(1,Math.min(3,sp.fl|0||1)),mw=6.2,mh=3,md=4.6,W=n*mw;rad=30+n*2.5+fl*3;
+const wall=M(new THREE.Color(sp.col||'#f1ece4')),dark=M(0x2b3440,{roughness:.5}),glass=M(0x9fd6ee,{transparent:true,opacity:.55,roughness:.05,metalness:.6}),wood=M(0x9a6b3e),add=(g,m,x,y,z,rx)=>{const o=new THREE.Mesh(g,m);o.position.set(x,y,z);if(rx)o.rotation.x=rx;house.add(o)};
+for(let f=0;f<fl;f++){const k=f?Math.max(1,n-1):n,x0=-(k*mw)/2;for(let i=0;i<k;i++){const cx=x0+mw*(i+.5),cy=f*mh+mh/2;add(new THREE.BoxGeometry(mw-.06,mh-.08,md),wall,cx,cy,0);add(new THREE.BoxGeometry(mw*.8,mh*.74,.05),dark,cx,cy,-md/2-.01);add(new THREE.BoxGeometry(mw*.76,mh*.7,.05),glass,cx,cy,-md/2-.05);if(i)add(new THREE.BoxGeometry(.06,mh,md+.08),dark,x0+mw*i,cy,0)}}
+const k0=fl>1?Math.max(1,n-1):n,top=fl*mh;add(new THREE.BoxGeometry(k0*mw+.9,.25,md+1.8),dark,0,top+.12,-.2);
+add(new THREE.BoxGeometry(W+3,.3,3.4),wood,0,.15,-md/2-1.7);for(let i=0;i<=n;i++)add(new THREE.CylinderGeometry(.06,.06,mh,6),dark,-W/2+i*mw,mh/2,-md/2-3.3);
+if(sp.pool)add(new THREE.BoxGeometry(W*.6,.1,2.8),M(0x39c6e8,{roughness:.1,metalness:.3}),0,.05,-md/2-5.6);
+if(sp.solar)for(let i=0;i<k0;i++)add(new THREE.BoxGeometry(mw*.7,.06,1.6),M(0x14284a,{metalness:.6,roughness:.3}),-(k0*mw)/2+mw*(i+.5),top+.6,.2,-.4)};
+api.tod=v=>{base=v;if(mode==='orbit')setTod(v)};
+function cap(T){let s='';ct.forEach((a,i)=>{if(T>=a)s=caps[i]});if(capEl&&capEl.textContent!==s)capEl.textContent=s}
+api.play=kind=>{mode=kind;tt=0;dur=kind==='film'?20:24;caps=t(kind==='film'?'fc':'cc');ct=kind==='film'?[0,5,10,15]:[0,5,11,16,21];fam.visible=kind==='film';if(kind==='film')setTod(.8)};
+api.stop=()=>{mode='orbit';fam.visible=false;if(capEl)capEl.textContent='';if(pbEl)pbEl.style.width='0';setTod(base);api.end&&api.end()};
+function fit(){const w=cv.clientWidth,h=cv.clientHeight;if(w&&h&&(cv._w!==w||cv._h!==h)){R.setSize(w,h,false);C.aspect=w/h;C.updateProjectionMatrix();cv._w=w;cv._h=h}}
+new IntersectionObserver(e=>{vis=e[0].isIntersecting}).observe(cv);
+cv.addEventListener('pointerdown',e=>{if(mode!=='orbit')return;let x=e.clientX,y=e.clientY;cv.setPointerCapture(e.pointerId);const mv=ev=>{off-=(ev.clientX-x)*.008;offP=Math.max(-.1,Math.min(.5,offP+(ev.clientY-y)*.004));x=ev.clientX;y=ev.clientY},up=()=>{cv.removeEventListener('pointermove',mv);cv.removeEventListener('pointerup',up)};cv.addEventListener('pointermove',mv);cv.addEventListener('pointerup',up)});
+api.step=(dt,time)=>{if(!vis)return;fit();tt+=dt;for(let i=0;i<sg.count;i++){const x=sg.getX(i),y=sg.getY(i);sg.setZ(i,Math.sin(x*.1+time*1.2)*.4+Math.cos(y*.18+time*1.5)*.3)}sg.needsUpdate=true;
+if(mode==='orbit'){const th=Math.PI+(RM?0:Math.sin(time*.18))+off,ph=.2+offP;C.position.set(Math.sin(th)*rad*Math.cos(ph),3+Math.sin(ph)*rad,20+Math.cos(th)*rad*Math.cos(ph));C.lookAt(0,2.8,20)}
+else{const T=Math.min(tt,dur);pose(mode==='film'?FILM:CINE,T);if(mode==='film'){const z=-8+Math.min(T,11)*1.64,run=T<11;fam.children.forEach((f,i)=>{f.position.z=z+[0,.6,-.3,.3][i];f.position.y=run?Math.abs(Math.sin(T*9+i))*.12:0;f.legs.forEach((l,j)=>l.rotation.x=run?Math.sin(T*9+i+j*Math.PI)*.9:0)})}else setTod(.05+.9*T/dur);cap(T);if(pbEl)pbEl.style.width=T/dur*100+'%';if(tt>=dur+.8)api.stop()}
+R.render(S,C)};
+WS.push(api);return api}
+let _l=0;function loop(ts){const dt=Math.min((ts-_l)/1000,.1);_l=ts;WS.forEach(w=>w.step(dt,ts/1000));requestAnimationFrame(loop)}requestAnimationFrame(loop);
+function tsvg(c,n,fl,rf){let o='<rect width="200" height="110" fill="#bfe6f5"/><rect y="80" width="200" height="30" fill="#e6d3a8"/><rect y="72" width="200" height="10" fill="#2ec4c4"/>',w=34,h=22,x0=100-n*w/2;for(let f=0;f<fl;f++)for(let i=0;i<n;i++)o+='<rect x="'+(x0+i*w)+'" y="'+(80-(f+1)*h)+'" width="'+(w-1)+'" height="'+(h-1)+'" fill="'+c+'"/><rect x="'+(x0+i*w+5)+'" y="'+(80-(f+1)*h+5)+'" width="'+(w-11)+'" height="11" fill="#8fd3f4" opacity=".85"/>';const y=80-fl*h;o+=rf?'<path d="M'+(x0-4)+' '+y+'L'+(x0+n*w/2)+' '+(y-14)+'L'+(x0+n*w+4)+' '+y+'Z" fill="#33415a"/>':'<rect x="'+(x0-4)+'" y="'+(y-4)+'" width="'+(n*w+8)+'" height="4" fill="#33415a"/>';return '<svg viewBox="0 0 200 110" role="img" style="width:100%;border-radius:10px">'+o+'</svg>'}
+let cs='qatar',cc=[26.1,51.2],w1=null,w2=null;
+try{w1=World($('#cv1'),$('#cap1'),$('#pb1'));w1.site('neom');w1.spec({n:3,fl:2,col:'#f4efe6',solar:true,pool:true});w1.tod(.72);w1.end=()=>{$('#film').disabled=false}}catch(e){$('.h3d').hidden=true;$('.plan').style.display='block'}
+try{w2=World($('#cv2'),$('#cap2'),$('#pb2'));w2.site('qatar');w2.spec({n:3,fl:1,col:'#f1ece4',solar:true,pool:false});w2.tod(.7)}catch(e){$('#p-studio .vw').hidden=true}
+$('#film').onclick=()=>{if(w1){$('#film').disabled=true;w1.play('film')}};
+function links(){$('#ge').href='https://earth.google.com/web/search/'+encodeURIComponent(cc.join(','));$('#gm').href='https://www.google.com/maps/@'+cc[0]+','+cc[1]+',2000m/data=!3m1!1e3'}
+function renderStudio(){const li=L==='ar'?0:1,b=$('#sites');b.textContent='';SITES.forEach(k=>{const x=document.createElement('button');x.className='chip';x.setAttribute('aria-pressed',k.k===cs);x.textContent=k.n[li];x.onclick=()=>pick(k.k);b.append(x)});
+const k=SITES.find(x=>x.k===cs);$('#sdesc').textContent=(k?k.d[li]+' ':'')+t('feas');
+$('#map').innerHTML='<path d="M30 20L90 60L110 110L150 160L190 205L245 215L300 170L282 130L252 112L242 82L216 70L206 92L190 96L170 70L120 40Z" fill="var(--line)"/>'+SITES.map(k=>'<g data-s="'+k.k+'" style="cursor:pointer"><circle cx="'+k.p[0]+'" cy="'+k.p[1]+'" r="'+(k.k===cs?10:7)+'" fill="'+(k.k===cs?'#FFC857':'#0096C7')+'" stroke="#fff" stroke-width="2"/><text x="'+k.p[0]+'" y="'+(k.p[1]-14)+'" text-anchor="middle" font-size="11" fill="var(--ink)">'+k.n[li].split(/[،,]/)[0]+'</text></g>').join('');
+$$('#map [data-s]').forEach(e=>e.onclick=()=>pick(e.dataset.s));
+const T=$('#types');T.textContent='';[['#b4553a',2,2,0],['#e9e6df',4,1,0],['#f6f3ec',3,1,1],['#b9bcc0',3,2,0]].forEach((a,i)=>{const c=document.createElement('div');c.className='card';c.innerHTML=tsvg(a[0],a[1],a[2],a[3]);const h=document.createElement('h3');h.style.marginTop='10px';h.textContent=t('ty')[i][0];const p=document.createElement('p');p.textContent=t('ty')[i][1];c.append(h,p);T.append(c)});links()}
+function pick(k){const s=SITES.find(x=>x.k===k);if(!s)return;cs=k;cc=s.c;w2&&w2.site(k);renderStudio()}
+$('#cgo').onclick=()=>{const m=$('#coord').value.match(/(-?\d+(?:\.\d+)?)[,\s]+(-?\d+(?:\.\d+)?)/);if(!m)return;cc=[+m[1],+m[2]];cs='custom';w2&&w2.site('qatar');renderStudio()};
+$('#sCine').onclick=()=>w2&&w2.play('cine');$('#sOrb').onclick=()=>w2&&w2.stop();$('#tod').oninput=e=>w2&&w2.tod(+e.target.value/100);
+$('#sGo').onclick=async()=>{const v=$('#st1').value.trim(),o=$('#sOut');if(!v){o.textContent=t('need');return}const s=await smp();if(!s){o.textContent=t('na');return}o.textContent=t('wait');$('#spv').hidden=true;$('#scost').textContent='';
+try{const k=SITES.find(x=>x.k===cs),sp=await s.json(SAFE()+'\nSite: '+(k?k.n[1]:cc.join(','))+', beachfront, hot climate. Return ONLY JSON: {"title":string,"system":"container"|"steel"|"sip"|"panel","floors":1-3,"modules":2-6,"color":"#hex light facade color","solar":boolean,"pool":boolean,"rooms":[{"n":room name in the user’s language,"w":meters,"h":meters}],"note":one sentence on climate fit}. Request: '+v,{modelTier:'quick',cache:false});
+w2&&(w2.spec({n:+sp.modules||3,fl:+sp.floors||1,col:/^#[0-9a-f]{6}$/i.test(sp.color)?sp.color:'#f1ece4',solar:!!sp.solar,pool:!!sp.pool}),w2.play('cine'));
+const p=drawPlan(sp);if(p){$('#spv').innerHTML=p.svg;$('#spv').hidden=false;const r=RATE[sp.system]||RATE.steel,fl=Math.max(1,Math.min(3,+sp.floors||1)),a=Math.round(p.area*fl);$('#scost').textContent=t('est')+'$'+(a*r[0]).toLocaleString('en')+' – $'+(a*r[1]).toLocaleString('en');o.textContent=(sp.title||'')+'\n'+t('area')+': '+a+' m² · '+(t('sys')[sp.system]||sp.system)+'\n'+(sp.note||'')}else o.textContent=sp.note||t('err')}catch(e){o.textContent=e&&e.code==='not_granted'?t('na'):t('err')}};
+function revealInit(){const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.25});$$('#road>*,#trust>*,#rev>*,#p-biz h2,#types>*').forEach(e=>{e.classList.add('rv');const pid=e.parentElement.id;e.style.transitionDelay=(!RM&&(pid==='trust'||pid==='rev'||pid==='types')?[...e.parentElement.children].indexOf(e)*.12:0)+'s';io.observe(e)})}
+function applyFonts(f){let st=$('#fonts');if(!st){st=document.createElement('style');st.id='fonts';document.head.append(st)}st.textContent=f?[300,400,700].filter(w=>/^[0-9a-f]{32}$/.test(f[w]||'')).map(w=>'@font-face{font-family:"Al-Jazeera-Arabic";font-weight:'+w+';src:url("/_blob/'+f[w]+'")}').join(''):''}
+$('#fsave').onclick=async()=>{let a=null;try{a=await claude.use('assets')}catch(e){}if(!a||!db){$('#fst').textContent=t('fail');return}const f=Object.assign({},(cfg&&cfg.fonts)||{});try{for(const w of [3,4,7]){const fi=$('#f'+w).files[0];if(fi){const r=await a.upload(fi);f[w*100]=r.id}}await db.doc('site/config').set(Object.assign({},cfg||{},{fonts:f}));$('#fst').textContent=t('saved')}catch(e){$('#fst').textContent=t('fail')}};
+render();
+</script>
+</body>
+</html>
